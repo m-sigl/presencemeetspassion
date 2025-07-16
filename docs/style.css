@@ -44,3 +44,21 @@ em {
   font-style: italic;
   color: #8a4e3d;
 }
+
+/* Bridge Button */
+.bridge-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #8a4e3d;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.bridge-button:hover {
+  background-color: #5c2e24;
+}
