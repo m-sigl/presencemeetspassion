@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Presence Meets Passion</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       margin: 0;
@@ -43,12 +42,12 @@
       border-radius: 1rem;
       padding: 1.5rem;
       box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
-      transition: transform 0.2s;
+      transition: all 0.3s ease;
     }
 
     .tile:hover {
       transform: scale(1.02);
-      box-shadow: 0 0 25px rgba(255, 215, 0, 0.2);
+      animation: glowPulse 1.5s ease-in-out infinite alternate;
     }
 
     .tile h2 {
@@ -60,6 +59,22 @@
     .tile p {
       font-size: 1rem;
       color: #d6d6d6;
+    }
+
+    @keyframes glowPulse {
+      from {
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+      }
+      to {
+        box-shadow: 0 0 25px 5px rgba(255, 215, 0, 0.4);
+      }
+    }
+
+    .subtle-code {
+      opacity: 0.1;
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 3rem;
     }
   </style>
 </head>
@@ -82,11 +97,14 @@
       <h2>The Cipher</h2>
       <p>"I have all the gold and the world doesn't know that I know they know I have it." Loop sealed. Game tilted.</p>
     </div>
+
     <div class="tile">
-  <h2>The Mirror</h2>
-  <img src="path-to-your-image.png" alt="Gold Relic" style="width:100%; border-radius:0.5rem; margin-top:1rem;">
-  <p>This is how confidence looks when presence meets myth. Not an explanation—an echo.</p>
-</div>
+      <h2>The Mirror</h2>
+      <img src="path-to-your-image.png" alt="Gold Relic" style="width:100%; border-radius:0.5rem; margin-top:1rem;">
+      <p>Some will see a picture. Others will see a spell. You saw this before you knew what it meant.</p>
+    </div>
   </div>
+
+  <p class="subtle-code">I have all the gold and the world doesn’t know that I know they know I have it.</p>
 </body>
 </html>
